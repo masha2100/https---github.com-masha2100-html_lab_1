@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Зворотній зв'язок</title>
+</head>
+<body>
+    <form>
+  <fieldset>
+    <legend>Персональна інформація</legend>
+
+    <label for="firstname">Ім’я:</label>
+<input type="text" id="firstname" name="firstname" required>
+<label for="lastname">Прізвище:</label>
+<input type="text" id="lastname" name="lastname" required><br><br>
+
+    Email:<br>
+    <input type="email" name="email" required><br><br>
+
+    Вік:<br>
+    <input type="number" name="age" min="1" max="120" required><br><br>
+
+    Освіта:<br>
+    <select name="education" required>
+      <option value="">--Оберіть--</option>
+      <option value="повна">Повна</option>
+      <option value="неповна">Неповна</option>
+      <option value="вища">Вища</option>
+      <option value="професійна">Професійна</option>
+    </select><br><br>
+</fieldset><br>
+     Мета зворотнього зв'язку:<br>
+    <select name="callback" required>
+      <option value="">--Оберіть--</option>
+      <option value="співпраця">Співпраця</option>
+      <option value="Скарга на якість послуги">Скарга на якість послуги</option>
+      <option value="Пропозиція">Пропозиції</option>
+      <option value="Наявність помилки на сайті">Наявність помилки на сайті</option>
+    </select><br><br>
+   Детально:<br>
+<textarea name="details" rows="5" cols="50" maxlength="500" required></textarea><br><br>
+<input type="submit" value="Відправити">
+<input type="reset" value="Відмінити"><br><br>
+<input type="checkbox" name="agree" required> Згода на обробку ваших даних
+
+</form>
+</body>
+</html>

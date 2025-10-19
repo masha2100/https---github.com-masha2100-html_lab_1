@@ -17,10 +17,18 @@ header img{
  float: left;
 }
 header{
-    background-color: rgb(119, 212, 135);
+    background-color: rgb(186, 217, 191);
     padding: 40px;
     position: relative;
 }
+.news {
+    color: red;
+    font-weight: bold;
+    font-size: 1.5em;
+    margin-top: 10px;
+    min-height: 1.2em; 
+}
+
 nav > ul{
     list-style:none;
     padding:0;
@@ -62,5 +70,4 @@ footer p{
 
  footer p:hover {
   text-shadow: 2px 2px 6px rgba(167, 31, 31, 0.6);
-  transition: text-shadow 0.35s ease 0s;
-}
+ }

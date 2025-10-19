@@ -53,10 +53,29 @@
     </select><br><br>
    Детально:<br>
 <textarea name="details" rows="5" cols="50" maxlength="500" required></textarea><br><br>
+<div id="tooltip" class="tooltip">
+    Дякуючи Вам, ми стаємо кращі! Конкретизуйте мету звернення, будь ласка.
+</div>
 <input type="submit" value="Відправити">
 <input type="reset" value="Відмінити"><br><br>
 <input type="checkbox" name="agree" required> Згода на обробку ваших даних
 
 </form>
+<script>
+const textarea = document.querySelector('textarea[name="details"]');
+const tooltip = document.getElementById('tooltip');
+
+textarea.addEventListener('mouseenter', (e) => {
+    tooltip.style.display = 'block';
+    const rect = textarea.getBoundingClientRect();
+    tooltip.style.top = rect.top + window.scrollY + 'px';
+    tooltip.style.left = rect.right + 10 + 'px'; 
+});
+
+textarea.addEventListener('mouseleave', () => {
+    tooltip.style.display = 'none';
+});
+</script>
+
 </body>
 </html>
